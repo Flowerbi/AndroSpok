@@ -46,7 +46,7 @@ $(function(){
         },
       }
     )
-    event.preventDefault();
+    event.preventDefault({passive: true});
   });
 
   $('button[data-popup="1"]').on('click', function () {
